@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌐 Personnel web site</title>
+
+
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+
+        <!--
+      - #SIDEBAR
+    -->
+
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img style="transform: scale(1.1);" src="./assets/images/hassen-photo.png" alt="hassen photo"
+                        width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="DELAHAIE Jean-Baptiste">Chtourou Hassen</h1>
+
+                    <p class="title">Développeur</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Afficher le contact</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:hassenchtourou5@gmail.com" class="contact-link">hassenchtourou5<br>@
+                                gmail.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Téléphone</p>
+
+                            <a href="tel:55389396" class="contact-link">55389396</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Anniversaire</p>
+
+                            <time datetime="1982-06-23">18 AVRIL 2001</time>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Adresse</p>
+
+                            <address>Route de Tunis km 10.5</address>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+
+                    <li class="social-item">
+                        <a href="https://github.com/hassen9721" target="_blank" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/chtourou-hassen-168306233/" target="_blank"
+                            class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://www.facebook.com/profile.php?id=100007846695441" target="_blank"
+                            class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="assets/CV/CV.pdf" target="_blank" class="social-link">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+
+
+
+        <!--
+      - #main-content
+    -->
+
+        <div class="main-content">
+
+            <!--
+        - #NAVBAR
+      -->
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" data-nav-link href="index.html">À Propos</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link " href="competence.html">Compétences</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link " data-nav-link href="formation.html">Formations</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link " data-nav-link href="experience.html">Expériences</a>
+                    </li>
+
+
+                    <li class="navbar-item">
+                        <select class="active-option" class="navbar-link"
+                            style="background-color: hsla(240, 1%, 17%, 0.75);border: none;"
+                            onchange="location = this.value;">
+                            <option selected disabled>Autres</option>
+                            <option value="quizz.html">Quiz</option>
+                            <option selected value="evenements.html">Événements</option>
+                        </select>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a class="navbar-link" data-nav-link href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+
+
+
+
+
+
+            <article class="about active" data-page="à propos">
+
+                <header>
+                    <h2 class="h2 article-title">Événements</h2>
+                </header>
+
+                <section class="blog-posts">
+
+                    <ul class="blog-posts-list">
+
+                        <li class="blog-post-item">
+                            <a href="#">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/scrum_formation.jpg" alt="Aucun poste" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <span class="dot"></span>
+
+                                        <time datetime="2022-02-23">9 Décembre, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Scrum training session</h3>
+
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="blog-post-item">
+                            <a href="#">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/powerplat_formation.jpg" alt="Aucun poste" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <span class="dot"></span>
+
+                                        <time datetime="2022-02-23">22 Novembre, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Microsoft Power Platform Fundamentals PL-900 training
+                                        session</h3>
+
+                                </div>
+
+                            </a>
+                        </li>
+                        <li class="blog-post-item">
+                            <a href="#">
+
+                                <figure class="blog-banner-box">
+                                    <img src="./assets/images/microsoft_formation.jpg" alt="Aucun poste" loading="lazy">
+                                </figure>
+
+                                <div class="blog-content">
+
+                                    <div class="blog-meta">
+                                        <span class="dot"></span>
+
+                                        <time datetime="2022-02-23">25 October, 2023</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Microsoft Fundamentals MS-900 training session</h3>
+
+                                </div>
+
+                            </a>
+                        </li>
+                        <br>
+
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fmicrosoft.tech.club.isims%2Fvideos%2F894674845602270%2F&show_text=false&width=267&t=0"
+                            width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            allowFullScreen="true"></iframe>
+
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fmicrosoft.tech.club.isims%2Fvideos%2F3414240415460412%2F&show_text=false&width=560&t=0&mute=1"
+                            width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                            allowFullScreen="true">
+                        </iframe>
+
+
+
+
+                    </ul>
+
+                </section>
+
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
